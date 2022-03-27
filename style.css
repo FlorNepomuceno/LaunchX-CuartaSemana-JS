@@ -1,0 +1,268 @@
+body{
+    background-image: url("./image/forest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0px
+}
+p{
+    font-size: 24px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+li{
+    list-style-type: none;
+    padding: 10px;
+    color: white;
+}
+input{
+    width: 250px;
+}
+#pokeType span{
+    padding: 10px;
+    margin-left: 10px;
+}
+.logo{
+    background-color: red;
+    text-align: center;
+}
+.pokedex{
+    background-image: url("./image/pokedex.png");
+    background-size: cover;
+    height: 1000px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+.imagen-pokeball{
+    align-items: center;
+    padding: 20px;
+}
+.buscador{
+    display: inline;
+    margin-top: 50px;
+}
+.boton-buscador{
+    text-align: center;
+    border-radius: 10px;
+    border: 0px;
+    padding: 15px;
+    margin: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+.cuadrado{
+    background-image: url("./image/curva.png");
+    background-size: cover;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-6{
+    width: 50%;
+}
+.col-12{
+    width: 100%;
+}
+.center{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+}
+.dos-lineas{
+    display: flex;
+    vertical-align: middle;
+}
+.space{
+    margin-bottom: 20px;
+}
+.progress {
+    background-color: #ccc;
+    width: 100%;
+    height: 10px;
+}
+  
+.progress-bar { 
+    float: left;
+}
+  
+.progress-bar.orange {
+    background-color: orange;
+    height: 100%;
+}
+  
+.progress-bar.blue {
+    background-color: blue;
+    height: 100%;
+}
+  
+.progress-bar.yellow {
+    background-color: yellow;
+    height: 100%;
+}
+
+.popup-button {
+    font-size: 20px;
+    padding: 10px 50px 10px 50px;
+    color: #fff;
+    border: 10px solid #06D85F;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    text-align: center;
+    display: block;
+}
+.popup-button {
+    background: #06D85F;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: #06D85F;
+}
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+.movimientos{
+    font-size: 18px;
+}
+.info{
+    display: none;
+}
+.tipo{
+    display: inline-flex;
+}
+.stats{
+    text-align: right;
+    padding-right: 100px;
+}
+.tipo-normal {
+    outline-color: #A8A77A;
+    background-color: #A8A77A;
+}
+.tipo-fuego {
+    outline-color: #EE8130;
+    background-color: #EE8130;
+}
+.tipo-agua {
+    outline-color: #6390F0;
+    background-color: #6390F0;
+}
+.tipo-electrico {
+    outline-color: #F7D02C;
+    background-color: #F7D02C;
+}
+.tipo-planta {
+    outline-color: #7AC74C;
+    background-color: #7AC74C;
+}
+.tipo-volador {
+    color: #fff;
+    outline-color: #A98FF3;
+    background-color: #A98FF3;
+}
+.tipo-lucha {
+    color: #fff;
+    outline-color: #C22E28;
+    background-color: #C22E28;
+}
+.tipo-veneno {
+    outline-color: #A33EA1;
+    background-color: #A33EA1;
+}
+.tipo-tierra {
+    outline-color: #E2BF65;
+    background-color: #E2BF65;
+}
+.tipo-roca {
+    outline-color: #B6A136;
+    background-color: #B6A136;
+}
+.tipo-psiquico {
+    outline-color: #F95587;
+    background-color: #F95587;
+}
+.tipo-hielo {
+    outline-color: #96D9D6;
+    background-color: #96D9D6;
+}
+.tipo-bicho {
+    outline-color: #A6B91A;
+    background-color: #A6B91A;
+}
+.tipo-fantasma {
+    color: #fff;
+    outline-color: #735797;
+    background-color: #735797;
+}
+.tipo-acero {
+    outline-color: #B7B7CE;
+    background-color: #B7B7CE;
+}
+.tipo-dragon {
+    color: #fff;
+    outline-color: #6F35FC;
+    background-color: #6F35FC;
+}
+.tipo-oscuro {
+    color: #fff;
+    outline-color: #705746;
+    background-color: #705746;
+}
+.tipo-hada  {
+    outline-color: #D685AD;
+    background-color: #D685AD;
+}
+#buscar-pokemon{
+    margin-top: 5%;
+}
+

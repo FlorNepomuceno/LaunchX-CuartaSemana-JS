@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="./pixel-borders-master/docs/styles/pixel-borders.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="logo">
+    <div>
+        <img src="./image/logo.png" alt="" width="300px">
+    </div>
+</header>
+    <div class="pokedex col-12">
+        <div class="buscardor">
+            <div class="imagen-pokeball">
+                <img src="./image/pokeball.png" alt="Pokemon" width="200px"><br>
+            </div>
+            <input type="text" placeholder="Pikachu" id="pokeName" name="pokeName"><br>
+            <button class="boton-buscador" onclick="fetchPokemon()">Buscar Pokemon</button>
+        </div>
+    </div>
+    
+    <div id="buscar-pokemon" class=" col-12 center dos-lineas " style="display: none;">
+        
+        <div class="col-6 pixel-borders pixel-box--light cuadrado">  
+            
+            <div class="pixel-borders pixel-box--warning dos-lineas">
+                <div class="col-6">
+                    <p># <span id="pokeNumero"></span></p>
+                </div>
+                <div class="col-6">
+                    <p><span id="pokemonName"></span></p>
+                </div>
+            </div>
+            <img src="./image/pokeball.png" alt="Pokemon" id="pokeImg" width="250px"><br>
+            <div class="space"></div>
+            <div class="space"></div>
+            <div class="space"></div>
+            <div class="tipo">
+                <p>TIPO:</p>
+                <p><span id="pokeType"></span></p>
+            </div>
+            <div class="space"></div>
+            <div class="pixel-borders pixel-box--light">
+                <p> Base Stats</p>
+            </div>
+            <div class="space"></div>
+            <div class="col-12 dos-lineas">
+                <div class="col-3 stats">
+                    <p>HP: <span id="pokePh"></span></p>
+                    <p>ALTURA: <span id="pokeAltura"></span></p>
+                    <p>PESO: <span id="pokePeso"></span></p>
+                </div>
+                <div class="col-6">
+                    <div class="dos-lineas">
+                            <p>ATK:<span id="pokeAtk"></span></p>
+                    </div>
+                    <div class="dos-lineas">
+                        <p>DEF: <span id="pokeDef"></span></p>
+                    </div>
+                    <div class="dos-lineas">
+                        <p>SP.ATK: <span id="pokeSAtak"></span></p>
+                    </div>
+                    <div class="dos-lineas">
+                        <p>SP.DEF: <span id="pokeSDef"></span></p>
+                    </div>
+                    <div class="dos-lineas">
+                        <p>SPEED: <span id="pokeSpeed"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div>
+                <a class="popup-button pixel-box--success" href="#popup1">Moves</a>
+            </div>
+        </div>
+    </div>  
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Moves</h2>
+            <a class="close" href="#">&times;</a>
+            <div>
+                <p class="movimientos" id="pokeMove"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
